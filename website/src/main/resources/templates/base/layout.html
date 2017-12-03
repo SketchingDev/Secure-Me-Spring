@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<!--/* Head takes 3 arguments that are fragments */-->
+<head th:fragment="head(title)">
+    <!--/*  Title will be replaced by their respective titles in the calling template. */-->
+    <title th:text="${title}">Task List</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></link>
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css"></link>
+    <script defer="defer" src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</head>
+<body>
+</body>
+</html>

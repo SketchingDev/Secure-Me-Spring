@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="base/layout :: head(Search)">
+    <title>Search</title>
+</head>
+<body>
+    <div th:insert="base/layout :: content(~{ :: #search})">
+        <form action="#" th:action="@{/results}" th:object="${search}" method="get">
+            <p>Search: <input type="text" id="search" th:field="*{term}" /></p>
+            <p><input  type="submit" value="Submit" /></p>
+
+            <button id="search-submit"
+                    class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                Button
+            </button>
+        </form>
+    </div>
+</body>
+</html>

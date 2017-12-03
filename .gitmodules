@@ -1,0 +1,3 @@
+[submodule "selenium-cucumber-java"]
+	path = selenium-cucumber-java
+	url = git@github.com:SketchingDev/selenium-cucumber-java.git
