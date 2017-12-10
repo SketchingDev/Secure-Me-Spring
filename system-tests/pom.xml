@@ -42,11 +42,6 @@
             <artifactId>cucumber-junit</artifactId>
             <version>1.2.5</version>
         </dependency>
-        <dependency>
-            <groupId>uk.co.sketchingdev</groupId>
-            <artifactId>website</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
 
         <!-- Required to resolve error: IllegalAccessError: tried to access method com.google.common.util.concurrent.SimpleTimeLimiter -->
         <!-- https://stackoverflow.com/questions/45643956/illegalaccesserror-thrown-by-new-chromedriver-on-osx-java -->
@@ -72,27 +67,6 @@
                     </execution>
                 </executions>
             </plugin>
-            <!--<plugin>-->
-                <!--<groupId>org.springframework.boot</groupId>-->
-                <!--<artifactId>spring-boot-maven-plugin</artifactId>-->
-                <!--<configuration>-->
-                    <!--<mainClass>uk.co.sketchingdev.securemespring.website.Application</mainClass>-->
-                <!--</configuration>-->
-                <!--<executions>-->
-                    <!--<execution>-->
-                        <!--<id>pre-integration-test</id>-->
-                        <!--<goals>-->
-                            <!--<goal>start</goal>-->
-                        <!--</goals>-->
-                    <!--</execution>-->
-                    <!--<execution>-->
-                        <!--<id>post-integration-test</id>-->
-                        <!--<goals>-->
-                            <!--<goal>stop</goal>-->
-                        <!--</goals>-->
-                    <!--</execution>-->
-                <!--</executions>-->
-            <!--</plugin>-->
         </plugins>
     </build>
 </project>
