@@ -6,6 +6,11 @@ them.
 
 Testing the state of the vulnerabilities is achieved by running the [Selenium][selenium] based system-tests.
 
+## Vulnerabilities
+
+* Cross-site scripting (XSS)
+  * Reflected
+
 ## Selenium tests
 
 The Selenium tests are specific to Chrome as they pass Chrome specific arguments to disable automatic XSS protection.
@@ -30,11 +35,6 @@ A Selenium server with headless Chrome can be setup with Docker.
 4. Set the Selenium Server's endpoint in either:
   * `selenium.hub.url` property in `system-tests/src/test/resources/application.properties`
   * `SELENIUM_HUB_URL` environment variable
-
-## Vulnerabilities
-
-* Cross-site scripting (XSS)
-  * Reflected
   
 [spring-mvc]: https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html#mvc
 [selenium]: http://www.seleniumhq.org/
