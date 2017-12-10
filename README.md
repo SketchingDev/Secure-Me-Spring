@@ -1,4 +1,4 @@
-# Secure-Me Spring
+# Secure-me Spring [![Build Status](https://travis-ci.org/SketchingDev/Secure-Me-Spring.svg?branch=development)](https://travis-ci.org/SketchingDev/Secure-Me-Spring)
 
 
 ## Selenium tests
