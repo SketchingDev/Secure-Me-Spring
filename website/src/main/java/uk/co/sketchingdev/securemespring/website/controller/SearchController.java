@@ -1,7 +1,10 @@
 package uk.co.sketchingdev.securemespring.website.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import uk.co.sketchingdev.securemespring.website.search.model.Search;
 
@@ -9,10 +12,16 @@ import uk.co.sketchingdev.securemespring.website.search.model.Search;
 @RequestMapping("/")
 public class SearchController {
 
-    @RequestMapping
-    public String home(Model model) {
+    private final String defaultSearch;
 
-        model.addAttribute("search", new Search(""));
+    @Autowired
+    public SearchController(@Value("${search.default}") String defaultSearch) {
+        this.defaultSearch = defaultSearch;
+    }
+
+    @GetMapping
+    public String home(Model model) {
+        model.addAttribute("search", new Search(defaultSearch));
         return "search";
     }
 }
