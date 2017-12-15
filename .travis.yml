@@ -4,4 +4,5 @@ jdk:
   - oraclejdk8
 
 script:
-- mvn clean verify -f website/pom.xml
+- mvn package
+- mvn verify -f website/pom.xml
