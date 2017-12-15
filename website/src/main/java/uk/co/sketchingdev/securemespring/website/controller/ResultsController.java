@@ -24,7 +24,7 @@ public class ResultsController {
     public String results(@ModelAttribute final Search search, Model model) {
 
         model.addAttribute("search", search);
-        model.addAttribute("results", searchRepository.findAll(search));
+        model.addAttribute("results", searchRepository.findAll());
 
         return "results";
     }

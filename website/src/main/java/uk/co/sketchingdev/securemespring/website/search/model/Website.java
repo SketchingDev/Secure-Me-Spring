@@ -5,14 +5,11 @@ import java.net.URL;
 
 public class Website {
 
-    private long id;
-
     private String title;
 
     private URI uri;
 
     private String description;
-
 
     public Website() {
     }
@@ -21,10 +18,6 @@ public class Website {
         this.title = title;
         this.uri = url;
         this.description = description;
-    }
-
-    public void setId(final long id) {
-        this.id = id;
     }
 
     public void setTitle(final String title) {
@@ -37,10 +30,6 @@ public class Website {
 
     public void setDescription(final String description) {
         this.description = description;
-    }
-
-    public long getId() {
-        return id;
     }
 
     public String getTitle() {

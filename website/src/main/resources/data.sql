@@ -1,2 +1,2 @@
-INSERT INTO website VALUES (1, 'Blog', 'My blog', 'http://sketchingdev.co.uk/');
-INSERT INTO website VALUES (2, 'Twitter', 'My Twitter account', 'https://twitter.com/SketchingDev');
+INSERT INTO website VALUES ('Blog', 'My blog', 'http://sketchingdev.co.uk/');
+INSERT INTO website VALUES ('Twitter', 'My Twitter account', 'https://twitter.com/SketchingDev');
