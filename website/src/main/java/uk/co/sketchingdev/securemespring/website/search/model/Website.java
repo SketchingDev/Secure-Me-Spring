@@ -1,23 +1,37 @@
 package uk.co.sketchingdev.securemespring.website.search.model;
 
+import javax.persistence.*;
 import java.net.URI;
-import java.net.URL;
 
+@Entity
+@Table(name = "website")
 public class Website {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
 
     private String title;
 
-    private URI uri;
-
     private String description;
+
+    private URI uri;
 
     public Website() {
     }
 
-    public Website(final String title, final URI url, final String description) {
+    public Website(final String title, final String description, final URI url) {
         this.title = title;
-        this.uri = url;
         this.description = description;
+        this.uri = url;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public void setTitle(final String title) {

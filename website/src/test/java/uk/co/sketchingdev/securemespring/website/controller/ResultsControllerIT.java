@@ -44,8 +44,8 @@ public class ResultsControllerIT {
     @Test
     public void pageContainsSearchTerm() throws Exception {
         final String title = "Test Title";
-        final Website website = new Website(title, URI.create("http://example.com"), "");
-        websiteJdbcRepository.insert(website);
+        final Website website = new Website(title, "", URI.create("http://example.com"));
+        websiteJdbcRepository.save(website);
 
         final String searchTerm = "Test term";
 

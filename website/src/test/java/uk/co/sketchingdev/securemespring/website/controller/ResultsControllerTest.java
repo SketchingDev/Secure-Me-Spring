@@ -9,8 +9,8 @@ import uk.co.sketchingdev.securemespring.website.search.WebsiteJdbcRepository;
 import uk.co.sketchingdev.securemespring.website.search.model.Search;
 import uk.co.sketchingdev.securemespring.website.search.model.Website;
 
-import java.util.Collection;
 import java.util.Collections;
+import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Matchers.eq;
@@ -45,7 +45,7 @@ public class ResultsControllerTest {
 
     @Test
     public void resultsAreAddedToModel() {
-        Collection<Website> results = Collections.singleton(mock(Website.class));
+        List<Website> results = Collections.singletonList(mock(Website.class));
         when(repository.findAll()).thenReturn(results);
 
         ResultsController controller = new ResultsController(repository);
