@@ -6,6 +6,14 @@ them.
 
 Testing the state of the vulnerabilities is achieved by running the [Selenium][selenium] based system-tests.
 
+## Website
+
+The website will be a ship owner catalogue that allows owners to register ships. Functionality will be:
+
+* Login
+* Search for ships and their owners
+* Add ship and register yourself as the owner
+
 ## Vulnerabilities
 
 * Cross-site scripting (XSS)
